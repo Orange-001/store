@@ -1,0 +1,36 @@
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+.nav-list {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: orange;
+  height: 3rem;
+}
+.nav-list .nav-item {
+  text-align: center;
+  float: left;
+  border-right: 1px solid #c0c0c0;
+}
+.nav-list .nav-item a {
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  overflow: hidden;
+}
+.nav-list .nav-item a .icon {
+  position: absolute;
+  right: -18px;
+  top: -10px;
+}
+.nav-list .nav-item:last-of-type {
+  border-right: 0 none;
+}
+.nav-list .nav-item:hover a {
+  color: #dbdf1e;
+}

@@ -1,0 +1,44 @@
+.flexAround(@justifyContent:space-around){
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.flexCenter(@direction:row){
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.relative(@left:0px,@top:0px) {
+  position: relative;
+  left: @left;
+  top: @top;
+}
+
+.absolute(@left:0px,@top:0px) {
+  position: absolute;
+  left: @left;
+  top: @top;
+}
+
+.absolute_right_top(@right:0px,@top:0px) {
+  position: absolute;
+  right: @right;
+  top: @top;
+}
+
+.toBlock(@width:0px,@height:0px){
+  display: block;
+  width: @width;
+  height: @height;
+}
+
+.center(@top:0) {
+  margin: @top auto;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
